@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Nguyen Van An",
+    "age": 20,
+    "email": "an@gmail.com",
+    "major": "Software Engineering"
+  },
+  {
+    "id": 2,
+    "name": "Tran Thi Binh",
+    "age": 21,
+    "email": "binh@gmail.com",
+    "major": "Information Technology"
+  },
+  {
+    "id": 3,
+    "name": "Le Van Cuong",
+    "age": 19,
+    "email": "cuong@gmail.com",
+    "major": "Cyber Security"
+  },
+  {
+    "id": 4,
+    "name": "Pham Thi Dung",
+    "age": 22,
+    "email": "dung@gmail.com",
+    "major": "Artificial Intelligence"
+  },
+  {
+    "id": 5,
+    "name": "Hoang Minh Duc",
+    "age": 20,
+    "email": "duc@gmail.com",
+    "major": "Software Engineering"
+  }
+]

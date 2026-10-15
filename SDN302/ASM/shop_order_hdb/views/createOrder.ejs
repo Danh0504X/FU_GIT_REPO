@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Order</title>
+</head>
+<body>
+
+    <h1>Create New Order</h1>
+
+    <form action="/orders/create" method="POST">
+
+        <div>
+            <label>Customer Name</label>
+            <input
+                type="text"
+                name="customerName"
+                required
+            >
+        </div>
+
+        <div>
+            <label>Product Name</label>
+            <select name="productName" required>
+                <option value="">-- Select a product --</option>
+                <% products.forEach(product => { %>
+                    <option value="<%= product.productName %>">
+                        <%= product.productName %> - <%= product.unitPrice.toLocaleString() %> VND
+                    </option>
+                <% }) %>
+            </select>
+        </div>
+
+        <div>
+            <label>Quantity</label>
+            <input
+                type="number"
+                name="quantity"
+                min="1"
+                required
+            >
+        </div>
+
+        <div>
+            <label>Order Date</label>
+            <input
+                type="date"
+                name="orderDate"
+                required
+            >
+        </div>
+
+        <button type="submit">
+            Place Order
+        </button>
+
+    </form>
+
+    <a href="/orders">
+        Go Back
+    </a>
+
+</body>
+</html>

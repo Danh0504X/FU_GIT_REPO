@@ -1,0 +1,6 @@
+[
+  { "_id": { "$oid": "660000000000000000000001" }, "name": "Mario Casciaro", "country": "Italy", "birthYear": 1980, "bio": "Author of Node.js Design Patterns." },
+  { "_id": { "$oid": "660000000000000000000002" }, "name": "Robert C. Martin", "country": "USA", "birthYear": 1952, "bio": "Known as Uncle Bob, author of Clean Code." },
+  { "_id": { "$oid": "660000000000000000000003" }, "name": "Paulo Coelho", "country": "Brazil", "birthYear": 1947, "bio": "Novelist, author of The Alchemist." },
+  { "_id": { "$oid": "660000000000000000000004" }, "name": "Shannon Bradshaw", "country": "USA", "birthYear": 1975, "bio": "Co-author of MongoDB The Definitive Guide." }
+]

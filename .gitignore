@@ -1,0 +1,133 @@
+# =========================================================
+#  .gitignore chung cho repo các môn học
+#  Pattern KHÔNG bắt đầu bằng "/" sẽ áp dụng ở MỌI cấp thư mục
+#  (vd: node_modules/ khớp cả SDN302/ASM/asm1/node_modules/)
+# =========================================================
+
+# ---------- Biến môi trường / bí mật ----------
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.p12
+*.jks
+*.keystore
+!debug.keystore
+secrets.json
+appsettings.Development.json
+
+# ---------- Node.js / JavaScript ----------
+node_modules/
+bower_components/
+.npm/
+.yarn/*
+!.yarn/releases
+.pnpm-store/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.eslintcache
+.cache/
+.parcel-cache/
+*.tsbuildinfo
+
+# ---------- Build output ----------
+dist/
+build/
+out/
+.next/
+.nuxt/
+.svelte-kit/
+.turbo/
+.vercel/
+coverage/
+.nyc_output/
+
+# ---------- React Native / Expo ----------
+.expo/
+.expo-shared/
+web-build/
+expo-env.d.ts
+.kotlin/
+*.orig.*
+.metro-health-check*
+# Thư mục native sinh ra bởi `npx expo prebuild` (bỏ comment nếu không dùng bare workflow)
+# /android
+# /ios
+
+# ---------- Android / iOS ----------
+.gradle/
+local.properties
+*.apk
+*.aab
+Pods/
+DerivedData/
+xcuserdata/
+
+# ---------- Java / Kotlin ----------
+target/
+*.class
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+*.war
+hs_err_pid*
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ---------- C# / .NET ----------
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+# ---------- C / C++ ----------
+*.o
+*.obj
+*.exe
+*.out
+cmake-build-*/
+
+# ---------- Database cục bộ ----------
+*.sqlite
+*.sqlite3
+*.db
+
+# ---------- IDE / Editor ----------
+.idea/
+*.iml
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+*.swp
+*~
+
+# ---------- Công cụ AI (cấu hình cá nhân) ----------
+.claude/settings.local.json
+
+# ---------- Hệ điều hành ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ---------- Log / tạm ----------
+logs/
+*.log
+tmp/
+temp/
+*.tmp
+~$*
+
+#have own gitignore for each subject, so we can ignore the common files here
+haveOwngit/

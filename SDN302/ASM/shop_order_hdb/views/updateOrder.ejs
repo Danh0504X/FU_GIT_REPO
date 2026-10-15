@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Order</title>
+</head>
+<body>
+
+    <h1>Update Order</h1>
+
+    <form action="/orders/update/<%= order._id %>" method="POST">
+
+        <div>
+            <label>Customer Name</label>
+            <input
+                type="text"
+                name="customerName"
+                value="<%= order.customerName %>"
+                required
+            >
+        </div>
+
+        <div>
+            <label>Product Name</label>
+            <select name="productName" required>
+                <option value="">-- Select a product --</option>
+                <% products.forEach(product => { %>
+                    <option
+                        value="<%= product.productName %>"
+                        <%= product.productName === order.productName ? "selected" : "" %>
+                    >
+                        <%= product.productName %> - <%= product.unitPrice.toLocaleString() %> VND
+                    </option>
+                <% }) %>
+            </select>
+        </div>
+
+        <div>
+            <label>Quantity</label>
+            <input
+                type="number"
+                name="quantity"
+                min="1"
+                value="<%= order.quantity %>"
+                required
+            >
+        </div>
+
+        <div>
+            <label>Order Date</label>
+            <input
+                type="date"
+                name="orderDate"
+                value="<%= order.orderDate ? order.orderDate.toISOString().slice(0, 10) : '' %>"
+                required
+            >
+        </div>
+
+        <button type="submit">
+            Update Order
+        </button>
+
+    </form>
+
+    <a href="/orders">
+        Go Back
+    </a>
+
+</body>
+</html>

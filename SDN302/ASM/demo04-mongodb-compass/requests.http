@@ -1,0 +1,23 @@
+### List with filter, sort and pagination
+GET http://localhost:3000/api/books?keyword=mongo&sort=-price&page=1&limit=3
+
+### Price range
+GET http://localhost:3000/api/books?minPrice=300000&maxPrice=500000
+
+### Aggregation statistics
+GET http://localhost:3000/api/books/stats
+
+### One book
+GET http://localhost:3000/api/books/660000000000000000000024
+
+### One book joined with its author and category
+GET http://localhost:3000/api/books/660000000000000000000024/full
+
+### Create
+POST http://localhost:3000/api/books
+Content-Type: application/json
+
+{ "title": "Refactoring", "isbn": "9780134757599", "price": 540000, "quantity": 4, "publishedYear": 2018, "tags": ["refactoring"], "inStock": true }
+
+### Invalid ObjectId -> 400
+GET http://localhost:3000/api/books/abc123

@@ -1,0 +1,6 @@
+[
+  { "_id": { "$oid": "660000000000000000000011" }, "name": "IT", "description": "Programming and technology books" },
+  { "_id": { "$oid": "660000000000000000000012" }, "name": "Database", "description": "SQL and NoSQL databases" },
+  { "_id": { "$oid": "660000000000000000000013" }, "name": "Software Engineering", "description": "Process, architecture, clean code" },
+  { "_id": { "$oid": "660000000000000000000014" }, "name": "Literature", "description": "Novels and short stories" }
+]

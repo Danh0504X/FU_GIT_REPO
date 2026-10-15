@@ -1,0 +1,64 @@
+{
+  "parkingslots": [
+    { "_id": "66f000000000000000000001", "slotCode": "A01", "zone": "A", "vehicleType": "motorbike", "status": "occupied",    "pricePerHour": 5000 },
+    { "_id": "66f000000000000000000002", "slotCode": "A02", "zone": "A", "vehicleType": "motorbike", "status": "available",   "pricePerHour": 5000 },
+    { "_id": "66f000000000000000000003", "slotCode": "A03", "zone": "A", "vehicleType": "motorbike", "status": "available",   "pricePerHour": 5000 },
+    { "_id": "66f000000000000000000004", "slotCode": "A04", "zone": "A", "vehicleType": "motorbike", "status": "maintenance", "pricePerHour": 5000 },
+    { "_id": "66f000000000000000000005", "slotCode": "B01", "zone": "B", "vehicleType": "car",       "status": "occupied",    "pricePerHour": 20000 },
+    { "_id": "66f000000000000000000006", "slotCode": "B02", "zone": "B", "vehicleType": "car",       "status": "available",   "pricePerHour": 20000 },
+    { "_id": "66f000000000000000000007", "slotCode": "B03", "zone": "B", "vehicleType": "car",       "status": "available",   "pricePerHour": 20000 },
+    { "_id": "66f000000000000000000008", "slotCode": "C01", "zone": "C", "vehicleType": "car",       "status": "maintenance", "pricePerHour": 25000 }
+  ],
+  "parkingsessions": [
+    {
+      "_id": "66f100000000000000000001",
+      "userId": "66f200000000000000000001",
+      "slotId": "66f000000000000000000001",
+      "vehiclePlate": "43A-123.45",
+      "checkInTime": "2026-09-28T01:00:00.000Z",
+      "checkOutTime": null,
+      "totalFee": null,
+      "note": "Active session - motorbike in A01"
+    },
+    {
+      "_id": "66f100000000000000000002",
+      "userId": "66f200000000000000000001",
+      "slotId": "66f000000000000000000005",
+      "vehiclePlate": "43A-678.90",
+      "checkInTime": "2026-09-28T02:30:00.000Z",
+      "checkOutTime": null,
+      "totalFee": null,
+      "note": "Active session - car in B01"
+    },
+    {
+      "_id": "66f100000000000000000003",
+      "userId": "66f200000000000000000001",
+      "slotId": "66f000000000000000000002",
+      "vehiclePlate": "43B1-111.11",
+      "checkInTime": "2026-09-26T01:00:00.000Z",
+      "checkOutTime": "2026-09-26T03:30:00.000Z",
+      "totalFee": 12500,
+      "note": "Completed - 2.5 hours x 5000"
+    },
+    {
+      "_id": "66f100000000000000000004",
+      "userId": "66f200000000000000000001",
+      "slotId": "66f000000000000000000006",
+      "vehiclePlate": "92A-222.22",
+      "checkInTime": "2026-09-25T06:00:00.000Z",
+      "checkOutTime": "2026-09-25T07:30:00.000Z",
+      "totalFee": 30000,
+      "note": "Completed - 1.5 hours x 20000"
+    },
+    {
+      "_id": "66f100000000000000000005",
+      "userId": "66f200000000000000000001",
+      "slotId": "66f000000000000000000003",
+      "vehiclePlate": "43C1-333.33",
+      "checkInTime": "2026-09-24T00:15:00.000Z",
+      "checkOutTime": "2026-09-24T04:00:00.000Z",
+      "totalFee": 18750,
+      "note": "Completed - 3.75 hours x 5000"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "NodeJS Basic",
+    "author": "David",
+    "category": "IT"
+  },
+  {
+    "id": 2,
+    "title": "MongoDB Guide",
+    "author": "John",
+    "category": "Database"
+  },
+  {
+    "id": 3,
+    "title": "React Handbook",
+    "author": "Anna",
+    "category": "IT"
+  },
+  {
+    "id": 4,
+    "title": "Computer Network",
+    "author": "Peter",
+    "category": "Network"
+  },
+  {
+    "id": 5,
+    "title": "Cyber Security",
+    "author": "Mark",
+    "category": "Security"
+  },
+  {
+    "title": "ExpressJS",
+    "author": "Tom",
+    "category": "IT",
+    "id": 6
+  }
+]

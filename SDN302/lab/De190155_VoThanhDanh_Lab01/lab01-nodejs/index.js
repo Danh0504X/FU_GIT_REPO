@@ -1,0 +1,1 @@
+console.log("DanhLo lab1");
