@@ -1,0 +1,68 @@
+{
+    "users": [
+        { "username": "doctor1", "password": "123456", "role": "doctor", "fullName": "Dr. Nguyen Van An" },
+        { "username": "doctor2", "password": "123456", "role": "doctor", "fullName": "Dr. Le Thi Hoa" },
+        { "username": "receptionist1", "password": "123456", "role": "receptionist", "fullName": "Tran Thi Binh" },
+        { "username": "receptionist2", "password": "123456", "role": "receptionist", "fullName": "Pham Van Cuong" }
+    ],
+
+    "departments": [
+        { "deptCode": "CARD", "name": "Cardiology", "specialty": "Heart & Blood Vessels", "floor": 2, "status": "open", "maxCapacity": 10 },
+        { "deptCode": "ORTH", "name": "Orthopedics", "specialty": "Bones & Joints", "floor": 3, "status": "open", "maxCapacity": 2 },
+        { "deptCode": "PEDI", "name": "Pediatrics", "specialty": "Children", "floor": 1, "status": "open", "maxCapacity": 15 },
+        { "deptCode": "GAST", "name": "Gastroenterology", "specialty": "Digestive System", "floor": 4, "status": "open", "maxCapacity": 8 },
+        { "deptCode": "DERM", "name": "Dermatology", "specialty": "Skin", "floor": 4, "status": "closed", "maxCapacity": 5 },
+        { "deptCode": "NEUR", "name": "Neurology", "specialty": "Brain & Nerves", "floor": 5, "status": "full", "maxCapacity": 2 }
+    ],
+
+    "tickets": [
+        {
+            "ticketNumber": "CARD-001", "patientName": "Hoang Van Duc", "patientPhone": "0905000001",
+            "deptCode": "CARD", "registeredBy": "receptionist1", "priority": "normal",
+            "registeredAt": "2026-10-19T01:00:00.000Z", "calledAt": "2026-10-19T01:25:00.000Z", "completedAt": "2026-10-19T01:45:00.000Z",
+            "status": "completed", "note": "Routine check-up"
+        },
+        {
+            "ticketNumber": "CARD-002", "patientName": "Vo Thi Em", "patientPhone": "0905000002",
+            "deptCode": "CARD", "registeredBy": "receptionist1", "priority": "urgent",
+            "registeredAt": "2026-10-19T01:10:00.000Z", "calledAt": "2026-10-19T01:50:00.000Z",
+            "status": "called", "note": "Chest pain"
+        },
+        {
+            "ticketNumber": "CARD-003", "patientName": "Dang Van Phuc", "patientPhone": "0905000003",
+            "deptCode": "CARD", "registeredBy": "receptionist2", "priority": "normal",
+            "registeredAt": "2026-10-19T01:20:00.000Z",
+            "status": "waiting"
+        },
+        {
+            "ticketNumber": "PEDI-001", "patientName": "Bui Minh Giang", "patientPhone": "0905000004",
+            "deptCode": "PEDI", "registeredBy": "receptionist2", "priority": "emergency",
+            "registeredAt": "2026-10-19T01:30:00.000Z",
+            "status": "waiting", "note": "High fever"
+        },
+        {
+            "ticketNumber": "PEDI-002", "patientName": "Ngo Thi Hanh", "patientPhone": "0905000005",
+            "deptCode": "PEDI", "registeredBy": "receptionist1", "priority": "normal",
+            "registeredAt": "2026-10-19T01:35:00.000Z",
+            "status": "cancelled", "note": "Patient left"
+        },
+        {
+            "ticketNumber": "GAST-001", "patientName": "Do Van Khoa", "patientPhone": "0905000006",
+            "deptCode": "GAST", "registeredBy": "receptionist2", "priority": "normal",
+            "registeredAt": "2026-10-19T02:00:00.000Z", "calledAt": "2026-10-19T02:12:30.000Z", "completedAt": "2026-10-19T02:30:00.000Z",
+            "status": "completed"
+        },
+        {
+            "ticketNumber": "NEUR-001", "patientName": "Ly Thi Lan", "patientPhone": "0905000007",
+            "deptCode": "NEUR", "registeredBy": "receptionist1", "priority": "normal",
+            "registeredAt": "2026-10-19T02:10:00.000Z",
+            "status": "waiting"
+        },
+        {
+            "ticketNumber": "NEUR-002", "patientName": "Mai Van Minh", "patientPhone": "0905000008",
+            "deptCode": "NEUR", "registeredBy": "receptionist2", "priority": "urgent",
+            "registeredAt": "2026-10-19T02:15:00.000Z",
+            "status": "waiting", "note": "Headache"
+        }
+    ]
+}
