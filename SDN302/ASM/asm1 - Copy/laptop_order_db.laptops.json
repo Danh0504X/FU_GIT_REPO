@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "684f72b7b1bacd24b72ab6d0"
+  },
+  "name": "MacBook Air M2",
+  "brand": "Apple",
+  "price": 1200,
+  "stockQuantity": 10,
+  "createdAt": "2024-06-10T08:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "684f7336b1bacd24b72ab6d1"
+  },
+  "name": "Dell XPS 13",
+  "brand": "Dell",
+  "price": 999,
+  "stockQuantity": 12,
+  "createdAt": "2024-06-12T09:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "684f7342b1bacd24b72ab6d2"
+  },
+  "name": "HP Pavilion 15",
+  "brand": "HP",
+  "price": 750,
+  "stockQuantity": 20,
+  "createdAt": "2024-06-15T11:00:00Z"
+}]
